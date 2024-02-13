@@ -1,0 +1,74 @@
+{
+
+    "Models" : [
+    
+    {
+    
+    "Name" : "YY17",
+    
+    "Edited By" : "Chinmoy",
+    
+    "Edited On" : "20/08/2023",
+    
+    "Type" : "4",
+    
+    "chart" : "True",
+    
+    "Status" : "In Progress",
+    
+    "Description" : "design Description included overall details",
+    
+    "activate" :"true",
+    
+    "Action_delete" : "false"
+    
+    },
+    
+    {
+    
+    "Name" : "YY18",
+    
+    "Edited By" : "Shubham",
+    
+    "Edited On" : "20/08/2023",
+    
+    "Type" : "3",
+    
+    "chart" : "True",
+    
+    "Status" : "Draft",
+    
+    "Description" : "design Description included overall details",
+    
+    "activate" :"true",
+    
+    "Action_delete" : "true"
+    
+    },
+    
+    {
+    
+    "Name" : "YY19",
+    
+    "Edited By" : "Nikhil",
+    
+    "Edited On" : "20/08/2023",
+    
+    "Type" : "2",
+    
+    "chart" : "True",
+    
+    "Status" : "Published",
+    
+    "Description" : "design Description included overall details",
+    
+    "activate" :"false",
+    
+    "Action_delete" : "false"
+    
+    }
+    
+    ]
+    
+    }
+    

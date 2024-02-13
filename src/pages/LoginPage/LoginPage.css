@@ -1,0 +1,66 @@
+.login-page-textbox {
+  /* border: 1px solid red; */
+  width: 70%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 42px;
+}
+
+.login-page-inside-textboxogin-page-textbox-subheading {
+  font-size: 32px;
+}
+
+.login-page-inside-textbox {
+  border: 1px solid #fff;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+.login-button-container-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.login-button-container-div:hover .login-btn-text {
+  transform: translateX(45px);
+  transition: 0.6s ease-in-out;
+  color: #adb1ff;
+}
+
+.login-button-container-div .login-btn-text {
+  transition: transform 0.6s ease-in-out, color 0.6s ease-in-out;
+}
+
+.login-button-container-div:not(:hover) .login-btn-text {
+  transform: translateX(0);
+}
+
+.login-button-container-div:hover .login-btn-icon {
+  transform: translateX(-95px);
+  animation: fadeIn 3s;
+  color: #adb1ff;
+  fill: #adb1ff;
+}
+
+.login-button-container-div .login-btn-icon {
+  transition: transform 0.6s ease-in-out, color 0.6s ease-in-out,
+    fill 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

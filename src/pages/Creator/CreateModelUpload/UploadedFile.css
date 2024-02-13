@@ -1,0 +1,22 @@
+.customDataTable {
+  white-space: normal !important;
+  background-color: blue;
+}
+
+.wrapper {
+  background-color: blue;
+}
+
+table thead th {
+  white-space: nowrap !important;
+}
+
+data-column {
+  white-space: nowrap !important;
+}
+
+/* [data-column-id='2'].rdt_TableCol_Sortable {
+  background-color: orange;
+  white-space: wrap !important;
+  text-overflow: unset !important;
+} */

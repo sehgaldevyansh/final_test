@@ -1,0 +1,1411 @@
+{
+    "data": [
+        {
+            "systemName": "Hood System",
+            "baseModel": "XYZ123",
+            "blocks": [
+                {
+                    "blockCode": "CJ020",
+                    "variants": [
+                        {
+                            "variant": "001",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED21",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "002",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED22",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "003",
+                            "group": "na",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED23",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "004",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "005",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED21",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "systemName": "Fender System",
+            "baseModel": "XYZ123",
+            "blocks": [
+                {
+                    "blockCode": "CJ020",
+                    "variants": [
+                        {
+                            "variant": "001",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED21",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "002",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED22",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "003",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED23",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "004",
+                            "group": "na",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "005",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "systemName": "Defender System",
+            "baseModel": "XYZ124",
+            "blocks": [
+                {
+                    "blockCode": "CJ020",
+                    "variants": [
+                        {
+                            "variant": "001",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED21",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "002",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED22",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "003",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED23",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "004",
+                            "group": "na",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "005",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "systemName": "Part System",
+            "baseModel": "XYZ125",
+            "blocks": [
+                {
+                    "blockCode": "CJ020",
+                    "variants": [
+                        {
+                            "variant": "001",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED21",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "002",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED22",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "003",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED23",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "004",
+                            "group": "na",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "005",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "systemName": "Part System",
+            "baseModel": "XYZ125",
+            "blocks": [
+                {
+                    "blockCode": "CJ020",
+                    "variants": [
+                        {
+                            "variant": "001",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED21",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "002",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED22",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "003",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED23",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "004",
+                            "group": "na",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "005",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "systemName": "Part System",
+            "baseModel": "XYZ125",
+            "blocks": [
+                {
+                    "blockCode": "CJ020",
+                    "variants": [
+                        {
+                            "variant": "001",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED21",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "002",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED22",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "003",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED23",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "004",
+                            "group": "na",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "005",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "systemName": "Part System",
+            "baseModel": "XYZ125",
+            "blocks": [
+                {
+                    "blockCode": "CJ020",
+                    "variants": [
+                        {
+                            "variant": "001",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED21",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "002",
+                            "group": "uncommon",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED22",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "003",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED23",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "004",
+                            "group": "na",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "variant": "005",
+                            "group": "common",
+                            "levels": [
+                                {
+                                    "level": 1,
+                                    "parentPart": {
+                                        "parentPartNo": "S2D2-2D4D-DCD",
+                                        "childParts": [
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED24",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            },
+                                            {
+                                                "partNo": "SCS23C-QEE2C-EED2C",
+                                                "installLocationComment": "Bumper lower side section",
+                                                "quantity": 3,
+                                                "sumQuantity": 7,
+                                                "aAr": "A",
+                                                "dwgType": "S"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

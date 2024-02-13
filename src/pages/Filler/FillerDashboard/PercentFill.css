@@ -1,0 +1,28 @@
+.horizontal-progress-bar-container {
+    width: 100%;
+    height: 20px;
+     /* background-color: #eee; */
+    border-radius: 5px; 
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .progress-bar {
+    height: 100%;
+  }
+  
+  .necessary {
+    background-color: #118dff; /* necessary color */
+  }
+  
+  .unnecessary {
+    background-color: #12239e; /* Unnecessary color */
+  }
+  .progress-label {
+   margin-left: 3px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  

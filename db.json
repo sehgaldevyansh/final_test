@@ -1,0 +1,470 @@
+{
+  "models": {
+    "result": {
+      "message": "Success"
+    },
+    "status": {
+      "message": "OK"
+    },
+    "results": [
+      {
+        "Name": "YY17",
+        "Edited By": "Chinmoy",
+        "Edited On": "20/08/2023",
+        "Type": "2",
+        "chart": "True",
+        "Status": "InProgress",
+        "Description": "design Description included overall details",
+        "Active": "true",
+        "Action_delete": "false"
+      },
+      {
+        "Name": "YY18",
+        "Edited By": "Shubham",
+        "Edited On": "20/08/2023",
+        "Type": "2",
+        "chart": "True",
+        "Status": "draft",
+        "Description": "design Description included overall details",
+        "Active": "true",
+        "Action_delete": "true"
+      },
+      {
+        "Name": "YY19",
+        "Edited By": "Nikhil",
+        "Edited On": "20/08/2023",
+        "Type": "2",
+        "chart": "True",
+        "Status": "completed",
+        "Description": "design Description included overall details",
+        "Active": "true",
+        "Action_delete": "false"
+      }
+    ]
+  },
+  "getModel": {
+    "result": {
+      "message": "Success"
+    },
+    "status": {
+      "message": "OK"
+    },
+    "Model_data": {
+      "General_info": {
+        "Model_Name": "",
+        "Type": "",
+        "Design_Responsibility": "Maruti",
+        "Developement_Responsilbity": "Suzuki",
+        "Description": "No description as of now"
+      },
+      "Milestones": {
+        "Kick_Off": {
+          "Deadline": "",
+          "subTask": {}
+        },
+        "Concept": {
+          "Deadline": "18/11/2023",
+          "subTask": {
+            "Task1": {},
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/01/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/10/2023"
+            }
+          }
+        },
+        "Sketch_Final": {
+          "Deadline": "18/10/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        },
+        "Model_Selection": {
+          "Deadline": "18/10/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        },
+        "Rough_Cad": {
+          "Deadline": "18/4/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        },
+        "50_Cad": {
+          "Deadline": "18/2/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        },
+        "90_Cad": {
+          "Deadline": "18/12/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        },
+        "100_Cad": {
+          "Deadline": "18/12/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        },
+        "Big_part_Drawing": {
+          "Deadline": "18/12/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        },
+        "Small_part_Dwaring": {
+          "Deadline": "18/12/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        },
+        "DP_Trails": {
+          "Deadline": "18/12/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        },
+        "PP_trails": {
+          "Deadline": "18/12/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        },
+        "MPP_Trails": {
+          "Deadline": "18/12/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        },
+        "Pilot": {
+          "Deadline": "18/12/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        },
+        "Soap": {
+          "Deadline": "18/12/2023",
+          "subTask": {
+            "Task1": {
+              "start_time": "12/06/2022",
+              "end_time": "15/12/2022"
+            },
+            "Task2": {
+              "start_time": "13/08/2022",
+              "end_time": "23/02/2023"
+            },
+            "Task3": {
+              "start_time": "03/01/2023",
+              "end_time": "06/09/2023"
+            }
+          }
+        }
+      }
+    }
+  },
+  "userdata": {
+    "userdata": {
+      "name": "Kaushik Gattani",
+      "department": "Engineering",
+      "engineering_type": "Vehicle",
+      "engineering_department": "Body",
+      "engineering_type_code": "EN-B1",
+      "user_level": "PMG/PIC/GL/TL ..."
+    }
+  },
+  "getUploadedData": {
+    "msg": "SUCCESS",
+    "data": {
+      "totalPartsList": [
+        {
+          "id": 302,
+          "modelNumber": {
+            "modelNumber": "YY20",
+            "type": 3,
+            "created_By": "ranjan@maruti.co.in",
+            "editedBy": "ranjan@maruti.co.in",
+            "editedOn": "2023-12-15",
+            "activate": true,
+            "designResponsibility": "MSIL",
+            "developmentResponsibility": "MSIL",
+            "description": "No descshfosflnlnription as of now",
+            "rowState": 1
+          },
+          "fileType": "TPL",
+          "fileName": "nitish-tpl.csv",
+          "uploadedBy": "ranjan@maruti.co.in",
+          "uploadedOn": "18/12/2023",
+          "noOfRowsPresent": 12,
+          "noOfRowsAdded": 10
+        },
+        {
+          "id": 352,
+          "modelNumber": {
+            "modelNumber": "YY20",
+            "type": 3,
+            "created_By": "ranjan@maruti.co.in",
+            "editedBy": "ranjan@maruti.co.in",
+            "editedOn": "2023-12-15",
+            "activate": true,
+            "designResponsibility": "MSIL",
+            "developmentResponsibility": "MSIL",
+            "description": "No descshfosflnlnription as of now",
+            "rowState": 1
+          },
+          "fileType": "TPL",
+          "fileName": "nitish-tpl.csv",
+          "uploadedBy": "ranjan@maruti.co.in",
+          "uploadedOn": "18/12/2023",
+          "noOfRowsPresent": 12,
+          "noOfRowsAdded": 10
+        },
+        {
+          "id": 402,
+          "modelNumber": {
+            "modelNumber": "YY20",
+            "type": 3,
+            "created_By": "ranjan@maruti.co.in",
+            "editedBy": "ranjan@maruti.co.in",
+            "editedOn": "2023-12-15",
+            "activate": true,
+            "designResponsibility": "MSIL",
+            "developmentResponsibility": "MSIL",
+            "description": "No descshfosflnlnription as of now",
+            "rowState": 1
+          },
+          "fileType": "TPL",
+          "fileName": "nitish-tpl.csv",
+          "uploadedBy": "ranjan@maruti.co.in",
+          "uploadedOn": "18/12/2023",
+          "noOfRowsPresent": 12,
+          "noOfRowsAdded": 10
+        },
+        {
+          "id": 452,
+          "modelNumber": {
+            "modelNumber": "YY20",
+            "type": 3,
+            "created_By": "ranjan@maruti.co.in",
+            "editedBy": "ranjan@maruti.co.in",
+            "editedOn": "2023-12-15",
+            "activate": true,
+            "designResponsibility": "MSIL",
+            "developmentResponsibility": "MSIL",
+            "description": "No descshfosflnlnription as of now",
+            "rowState": 1
+          },
+          "fileType": "TPL",
+          "fileName": "People-Master.csv",
+          "uploadedBy": "ranjan@maruti.co.in",
+          "uploadedOn": "18/12/2023",
+          "noOfRowsPresent": 12,
+          "noOfRowsAdded": 10
+        },
+        {
+          "id": 552,
+          "modelNumber": {
+            "modelNumber": "YY20",
+            "type": 3,
+            "created_By": "ranjan@maruti.co.in",
+            "editedBy": "ranjan@maruti.co.in",
+            "editedOn": "2023-12-15",
+            "activate": true,
+            "designResponsibility": "MSIL",
+            "developmentResponsibility": "MSIL",
+            "description": "No descshfosflnlnription as of now",
+            "rowState": 1
+          },
+          "fileType": "TPL",
+          "fileName": "nitish-tpl.csv",
+          "uploadedBy": "ranjan@maruti.co.in",
+          "uploadedOn": "18/12/2023",
+          "noOfRowsPresent": 11,
+          "noOfRowsAdded": 10
+        }
+      ],
+      "peopleMaster": [
+        {
+          "id": 502,
+          "modelNumber": {
+            "modelNumber": "YY20",
+            "type": 3,
+            "created_By": "ranjan@maruti.co.in",
+            "editedBy": "ranjan@maruti.co.in",
+            "editedOn": "2023-12-15",
+            "activate": true,
+            "designResponsibility": "MSIL",
+            "developmentResponsibility": "MSIL",
+            "description": "No descshfosflnlnription as of now",
+            "rowState": 1
+          },
+          "fileType": "PM",
+          "fileName": "People-Master.csv",
+          "uploadedBy": "ranjan@maruti.co.in",
+          "uploadedOn": "18/12/2023",
+          "noOfRowsPresent": 12,
+          "noOfRowsAdded": 10
+        },
+        {
+          "id": 553,
+          "modelNumber": {
+            "modelNumber": "YY20",
+            "type": 3,
+            "created_By": "ranjan@maruti.co.in",
+            "editedBy": "ranjan@maruti.co.in",
+            "editedOn": "2023-12-15",
+            "activate": true,
+            "designResponsibility": "MSIL",
+            "developmentResponsibility": "MSIL",
+            "description": "No descshfosflnlnription as of now",
+            "rowState": 1
+          },
+          "fileType": "PM",
+          "fileName": "People-Master.csv",
+          "uploadedBy": "ranjan@maruti.co.in",
+          "uploadedOn": "18/12/2023",
+          "noOfRowsPresent": 6,
+          "noOfRowsAdded": 5
+        }
+      ],
+      "uncommonActivityMaster": []
+    }
+  }
+}

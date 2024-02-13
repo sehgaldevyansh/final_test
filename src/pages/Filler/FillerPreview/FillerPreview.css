@@ -1,0 +1,38 @@
+.deviation-item-container {
+  background-color: #f4f5f8;
+  color: var(--base-text-color);
+  width: 100%;
+  border: 1px solid #e6e9f0;
+  padding: 8px 16px;
+}
+
+.preview-milestone-name-div {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  border: var(--general-border);
+  border-radius: 4px 4px 0px 0px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.preview-milestone-deviation-div {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  border: var(--general-border);
+  border-radius: 0px 0px 4px 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.download-csv-main-div {
+}
+
+.download-csv-text {
+  color: var(--base-text-color);
+  font-weight: 600;
+}
+
+.filler-preview-content-container::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}

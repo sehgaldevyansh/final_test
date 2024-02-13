@@ -1,0 +1,11 @@
+.filler-comments-for-checker-heading {
+  color: var(--base-text-color);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.filler-comments-div {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+}

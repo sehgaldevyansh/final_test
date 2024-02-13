@@ -1,0 +1,88 @@
+.create-modal-main-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 0.5rem;
+}
+.create-model-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  height: 70vh;
+  overflow: hidden;
+  border: 1px solid var(--foreground-text-color);
+  box-shadow: var(--bax-shadow-property);
+}
+
+.create-model-page-heading {
+  /* --page-heading-font-size:24px; */
+  /* --label-font-size:14px; */
+  font-size: var(--page-heading-font-size);
+  font-weight: var(--page-heading-font-weight);
+}
+
+.milestones-container {
+  flex-grow: 1;
+}
+
+/*!Milestone item */
+.milestone-date-input-container {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+}
+.milestone-label {
+  min-width: 150px;
+  color: var(--base-text-color);
+  font-weight: 600;
+}
+
+.milestone-item-container {
+  border: 1px solid var(--foreground-text-color);
+  border-radius: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 60vh;
+}
+
+.milestones-item-container {
+  overflow: scroll;
+  height: 60vh;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  border: 1px solid var(--foreground-text-color);
+  padding: 0.5rem;
+}
+
+.milestones-item-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.create-model-general-info-label {
+  min-width: 250px;
+  font-weight: var(--label-font-weight);
+  font-size: var(--label-font-size);
+  line-height: var(--label-line-height);
+}
+
+.general-information-label {
+  color: var(--base-text-color);
+  font-weight: 600;
+}
+
+.general-information-input-container {
+  /* border: 1px solid var(--foreground-text-color); */
+  padding: 0.5rem;
+  height: 60vh;
+}
+
+.milestone-header-label {
+  color: var(--base-text-color);
+  font-weight: 600;
+}

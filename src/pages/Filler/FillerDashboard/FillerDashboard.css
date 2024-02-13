@@ -1,0 +1,17 @@
+.heading-all {
+    /* background: #e6e7f1; */
+    color: #171c8f;
+    /* border-radius: 4px 4px 0 0; */
+    font-weight: 600;
+    padding: 12px 16px 12px 0px;
+}
+
+.content {
+    height: 300px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+    display: flex;
+    justify-content: center;
+    /* background: #fff; */
+}

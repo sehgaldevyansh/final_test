@@ -1,0 +1,80 @@
+/* Filler Deviation Milestone Component */
+
+.deviation-milestone-container {
+  display: flex;
+  gap: 10px;
+
+  background-color: #f8f9ff;
+}
+
+.deviation-milestone-activity-container {
+  display: flex;
+  gap: 2px;
+  flex-grow: 1;
+  padding: 5px 8px;
+  flex-wrap: wrap;
+}
+
+.deviation-milestone-name {
+  background-color: #cecfea;
+  padding: 9px 0px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--base-text-color);
+  /* width: 106px; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-width: 200px;
+  max-width: 200px;
+  /* overflow-wrap: anywhere */
+}
+
+.deviation-milestone-name-subdiv {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  max-width: 150px;
+}
+
+.deviation-necessary {
+  background: #94daf1 !important;
+  color: var(--base-text-color) !important;
+}
+
+.deviation-unnecessary-changed {
+  background: #bb973b !important;
+  color: #fff !important;
+}
+
+.deviation-milestone-item {
+  display: flex;
+  /* flex-grow: 1; */
+  background: #f4f4f4;
+  color: #9ea1a7;
+  /* font-family: Roboto; */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  /* border: 1px solid; */
+  padding: 2px 8px !important   ;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 70px; */
+  border-radius: 3px;
+}
+
+/* Filler Deviation Component */
+
+.deviation-block-heading {
+  color: var(--base-text-color);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.deviation-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}

@@ -1,0 +1,74 @@
+.main-header {
+  border-bottom: 1px solid #000;
+  min-height: 8vh;
+}
+
+.logo-container {
+  margin-left: 1rem;
+}
+
+.header-tabs-container {
+  color: var(--base-text-color) !important;
+  flex-grow: 0.75;
+}
+
+.tab-item-active {
+  color: var(--base-text-color) !important;
+  /* background-color: var(--base-text-color) !important;; */
+  font-weight: 700 !important;
+}
+
+.custom-indicator {
+  color: var(--base-text-color) !important;
+}
+
+.MuiTabs-indicator {
+  background-color: var(--base-text-color) !important;
+}
+
+.user-icons-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vw;
+}
+
+.user-info-container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.header-home-icon {
+  color: var(--foreground-text-color);
+}
+
+.header-bell-icon {
+  color: var(--base-text-color);
+}
+
+.header-user-icon {
+  color: var(--foreground-text-color-dark);
+}
+
+.user-division-div {
+  font-size: 12px;
+}
+
+
+/* .home-icon-style {
+  color: #b8babd !important;
+} */
+
+.home-icon-style {
+  cursor: pointer !important;
+  color: var(--base-text-color) !important;
+  fill: var(--base-text-color) !important;
+}
+
+.home-icon-style-inactive {
+  color: #b8babd !important;
+  cursor: initial;
+}

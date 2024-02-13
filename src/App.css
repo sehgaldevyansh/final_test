@@ -1,0 +1,45 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.login-btn:hover {
+  color: #171c8f;
+  border: 2px solid #171c8f;
+}
+
+.dcms-btn-main {
+  text-transform: none !important;
+  min-width: 116px !important;
+  padding: 8px 24px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  border-radius: 4px !important;
+  /* letter-spacing: -0.35px !important; */
+  line-height: 16px !important;
+}
+
+.dcms-active-btn {
+  background-color: var(--primary-btn-color) !important;
+  color: var(--primary-btn-text-color) !important;
+  border: 1px solid var(--primary-btn-color) !important;
+}
+
+.dcms-disabled-btn {
+  background-color: #fff !important;
+  color: var(--disable-btn-color) !important;
+  border: 1px solid var(--outline-border-color) !important;
+}
+
+.dcms-save-as-draft-btn {
+  border: 1px solid var(--outline-border-color) !important;
+  color: var(--outline-btn-text-color) !important;
+}
+
+.dcms-cancel-btn {
+  color: var(--outline-btn-text-color) !important;
+}
+
+.lnndaO {
+  white-space: pre-line !important;
+}
