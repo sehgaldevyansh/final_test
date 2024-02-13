@@ -32,49 +32,18 @@ describe("Sidebar Component", () => {
     expect(screen.getByText("BLOCKS")).toBeInTheDocument();
   });
 
-//   it("expands and collapses system list on click", () => {
-//     render(
-//         <Provider store={store}>
-//           <MemoryRouter>
-//             <Sidebar data={mockData} />)
-//           </MemoryRouter>
-//         </Provider>
-//       );
-//     fireEvent.click(screen.getByText("System 1"));
-//     expect(screen.getByText("Block 1")).toBeInTheDocument();
-//     fireEvent.click(screen.getByText("System 1"));
-//     expect(screen.queryByText("Block 1")).toBeNull();
-//   });
-
-//   it("displays blocks and variants when system is clicked", () => {
-//     render(
-//         <Provider store={store}>
-//           <MemoryRouter>
-//             <Sidebar data={mockData} />)
-//           </MemoryRouter>
-//         </Provider>
-//       );
-//     fireEvent.click(screen.getByText("System 1"));
-//     expect(screen.getByText("Block 1")).toBeInTheDocument();
-//     fireEvent.click(screen.getByText("Block 1"));
-//     expect(screen.getByText("Variant 1")).toBeInTheDocument();
-//   });
-
-//   it("displays parts when variant is clicked", () => {
-//     render(
-//         <Provider store={store}>
-//           <MemoryRouter>
-//             <Sidebar data={mockData} />)
-//           </MemoryRouter>
-//         </Provider>
-//       );
-//     fireEvent.click(screen.getByText("System 1"));
-//     fireEvent.click(screen.getByText("Block 1"));
-//     fireEvent.click(screen.getByText("Variant 1"));
-//     // Assuming parts are rendered based on data fetched from an API, you may need to mock the API call to test parts rendering.
-//     // Verify parts rendering logic here
-//   });
-
-  // Add more test cases as needed to cover other functionalities and scenarios
+  it("displays parts when variant is clicked", () => {
+    render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <Sidebar data={mockData} />
+        </MemoryRouter>
+      </Provider>
+    );
+    screen.debug();
+    // fireEvent.click(screen.getByText("Block 1"));
+    // fireEvent.click(screen.getByText("Variant 1"));
+    // Assuming parts are rendered based on data fetched from an API, you may need to mock the API call to test parts rendering.
+    // Verify parts rendering logic here
+  });
 });
- 

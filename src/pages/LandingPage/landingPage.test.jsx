@@ -25,26 +25,24 @@ describe("LandingPage component", () => {
     // Add more assertions based on your component's structure
   });
 
-//   it("fetches and sets token in cookies on component mount", async () => {
-//     render(
-//       <Provider store={store}>
-//         <MemoryRouter>
-//           <LandingPage />
-//         </MemoryRouter>
-//       </Provider>
-//     );
+  //   it("fetches and sets token in cookies on component mount", async () => {
+  //     render(
+  //       <Provider store={store}>
+  //         <MemoryRouter>
+  //           <LandingPage />
+  //         </MemoryRouter>
+  //       </Provider>
+  //     );
 
-//     // Ensure that the getToken function is called
-//     await waitFor(() =>
-//       expect(loginClient.getToken).toHaveBeenCalledTimes(1)
-//     );
+  //     // Ensure that the getToken function is called
+  //     await waitFor(() =>
+  //       expect(loginClient.getToken).toHaveBeenCalledTimes(1)
+  //     );
 
-//     // Check if the token and email are set in cookies
-//     expect(Cookies.get("jwtToken")).toBe("mockToken");
-//     expect(Cookies.get("email")).toBe("test@example.com");
-//   });
-
-
+  //     // Check if the token and email are set in cookies
+  //     expect(Cookies.get("jwtToken")).toBe("mockToken");
+  //     expect(Cookies.get("email")).toBe("test@example.com");
+  //   });
 
   // Add more test cases based on your component's functionality and behavior
 });

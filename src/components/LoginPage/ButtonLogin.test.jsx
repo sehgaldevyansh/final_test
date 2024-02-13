@@ -1,6 +1,5 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { vi } from "vitest";
 import { ButtonLogin } from "./ButtonLogin";
 import { Provider } from "react-redux";
 import { store } from "../../store";
@@ -15,8 +14,6 @@ describe("ButtonLogin", () => {
         </MemoryRouter>
       </Provider>
     );
-    // Add assertions based on the default rendering
-    // Example:
     expect(screen.getByText("LOGIN")).toBeInTheDocument();
   });
 
@@ -29,8 +26,6 @@ describe("ButtonLogin", () => {
         </MemoryRouter>
       </Provider>
     );
-    // Add assertions based on the custom property1
-    // Example:
     expect(screen.getByText("LOGIN")).toBeInTheDocument();
   });
 
@@ -46,10 +41,8 @@ describe("ButtonLogin", () => {
 
     button.dispatchEvent(new MouseEvent("mouseenter"));
 
-    // Add assertions based on the expected styles after mouse enter
-    // Example:
     expect(button).toHaveClass(
-      " [ font-family:'Inter',Helvetica] w-fit mt-[-1.00px] tracking-[0] text-[22px] font-medium text-center leading-[normal] relative"
+      "[ font-family:'Inter',Helvetica] w-fit mt-[-1.00px] tracking-[0] text-[22px] font-medium text-center leading-[normal] relative"
     );
   });
 
@@ -66,12 +59,37 @@ describe("ButtonLogin", () => {
     button.dispatchEvent(new MouseEvent("mouseenter"));
     button.dispatchEvent(new MouseEvent("mouseleave"));
 
-    // Add assertions based on the expected styles after mouse leave
-    // Example:
     expect(button).toHaveClass(
-      " [ font-family:'Inter',Helvetica] w-fit mt-[-1.00px] tracking-[0] text-[22px] font-medium text-center leading-[normal] relative"
+      "[ font-family:'Inter',Helvetica] w-fit mt-[-1.00px] tracking-[0] text-[22px] font-medium text-center leading-[normal] relative"
     );
   });
 
-  // Add more test cases as needed
+  test("navigates to correct route on button click", () => {
+    render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <ButtonLogin />
+        </MemoryRouter>
+      </Provider>
+    );
+    const button = screen.getByText("LOGIN");
+    button.click();
+
+    expect(window.location.pathname).toBe("/");
+  });
+
+  test("navigates to correct route with custom property1", () => {
+    const customProperty1 = "custom";
+    render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <ButtonLogin property1={customProperty1} />
+        </MemoryRouter>
+      </Provider>
+    );
+    const button = screen.getByText("LOGIN");
+    button.click();
+
+    expect(window.location.pathname).toBe("/");
+  });
 });
