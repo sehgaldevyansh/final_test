@@ -4,9 +4,9 @@ import { Provider } from "react-redux";
 import { store } from "../../../store";
 import { MemoryRouter } from "react-router-dom";
 import FillerDashboard from "./FillerDashboard";
+import { vi } from "vitest";
 
 describe("Filler Dashboard Component", () => {
- 
   it("renders without crashing", () => {
     render(
       <Provider store={store}>
@@ -17,7 +17,4 @@ describe("Filler Dashboard Component", () => {
     );
     expect(screen.getByText("Select Block")).toBeInTheDocument();
   });
-
-  // Add more test cases as needed to cover other functionalities and scenarios
 });
- 

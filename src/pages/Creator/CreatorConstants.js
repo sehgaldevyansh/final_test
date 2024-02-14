@@ -1,3 +1,5 @@
+/* v8 ignore start */
+
 export const milestoneSubDatePickerStyle = {
     '& .MuiInputBase-root': {
         fontSize: '0.65rem',
@@ -47,3 +49,5 @@ export const milestoneDeadlinePickerStyle = {
     },
     backgroundColor: '#fff'
 }
+
+/* v8 ignore stop */

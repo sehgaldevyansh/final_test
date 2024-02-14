@@ -70,8 +70,6 @@ describe("FillerMain component", () => {
     }
   });
 
-
-
   it("changes tabs on tab click", () => {
     render(
       <Provider store={store}>

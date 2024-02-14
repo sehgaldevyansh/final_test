@@ -1,6 +1,5 @@
-// LandingPage.test.jsx
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import { MemoryRouter, Router } from "react-router-dom";
+import { render, screen, fireEvent } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import Cookies from "js-cookie";
 import { Provider } from "react-redux";
@@ -16,8 +15,7 @@ describe("LandingPage component", () => {
       </Provider>
     );
 
-    // Add assertions based on the rendered component
-    // For example, you can check if certain elements are present
+    // Assert that the main heading and subheading are rendered
     expect(screen.getByText("MSIL R&D")).toBeInTheDocument();
     expect(screen.getByTestId("landing-page-subheading")).toHaveTextContent(
       "Design Change Management System"
@@ -25,24 +23,47 @@ describe("LandingPage component", () => {
     // Add more assertions based on your component's structure
   });
 
-  //   it("fetches and sets token in cookies on component mount", async () => {
-  //     render(
-  //       <Provider store={store}>
-  //         <MemoryRouter>
-  //           <LandingPage />
-  //         </MemoryRouter>
-  //       </Provider>
-  //     );
+  it("does not render Create / Edit Model Flow card for filler", () => {
+    // Mock userData with filler role
+    const mockUserData = {
+      results: {
+        divisionalPMG: false,
+        filler: true,
+      },
+    };
 
-  //     // Ensure that the getToken function is called
-  //     await waitFor(() =>
-  //       expect(loginClient.getToken).toHaveBeenCalledTimes(1)
-  //     );
+    render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <LandingPage userData={mockUserData} />
+        </MemoryRouter>
+      </Provider>
+    );
 
-  //     // Check if the token and email are set in cookies
-  //     expect(Cookies.get("jwtToken")).toBe("mockToken");
-  //     expect(Cookies.get("email")).toBe("test@example.com");
-  //   });
+    // Assert that the "Create / Edit Model Flow" card is not rendered for filler
+    expect(screen.queryByText("Create / Edit Model Flow")).toBeNull();
+  });
+
+  it("does not render Filler Activity Flow card for divisionalPMG", () => {
+    // Mock userData with divisionalPMG role
+    const mockUserData = {
+      results: {
+        divisionalPMG: true,
+        filler: false,
+      },
+    };
+
+    render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <LandingPage userData={mockUserData} />
+        </MemoryRouter>
+      </Provider>
+    );
+
+    // Assert that the "Filler Activity Flow" card is not rendered for divisionalPMG
+    expect(screen.queryByText("Filler Activity Flow")).toBeNull();
+  });
 
   // Add more test cases based on your component's functionality and behavior
 });

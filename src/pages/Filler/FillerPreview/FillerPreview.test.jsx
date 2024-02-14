@@ -16,8 +16,8 @@ describe("FillerPreview component", () => {
   beforeEach(() => {
     // Mock necessary values before each test
     axios.mockClear();
-    Cookies.get.mockReturnValue('mocked-email');
-    Cookies.get.mockReturnValue('mocked-jwtToken');
+    Cookies.get.mockReturnValue("mocked-email");
+    Cookies.get.mockReturnValue("mocked-jwtToken");
   });
 
   it("renders FillerPreview component correctly", () => {
@@ -32,8 +32,6 @@ describe("FillerPreview component", () => {
     // You can add more assertions here to check if the component renders correctly
     expect(screen.getByText("Download Part as CSV")).toBeInTheDocument();
   });
-
-
 
   // Add more test cases for other functions in the FillerPreview component
 });
