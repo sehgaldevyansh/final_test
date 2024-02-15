@@ -280,12 +280,7 @@ const MilestoneItem = ({
 
     const handleEndDateChange = (date) => {
       const d = new Date(date)?.toLocaleDateString("fr-FR");
-      // console.log('end date change', statemodelData.Milestones[milestoneName].subTask[objectPath])
-      // setEndDate(moment(event.target.value, 'YYYY-MM-DD').format('DD/MM/YYYY'));
-      // onEditDeadline(
-      //     `results.Milestones.${milestoneName}.subTask.${objectPath}.end_time`,
-      //     d
-      //   );
+
       setStatemodelData((prevData) =>
         produce(prevData, (draft) => {
           set(
@@ -295,8 +290,6 @@ const MilestoneItem = ({
           );
         })
       );
-      // console.log("statemodelData",statemodelData)
-      //   console.log("end date",endDate);
     };
 
     const handleSubmit = () => {

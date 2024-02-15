@@ -33,18 +33,17 @@ describe("Header component", () => {
       </Provider>
     );
 
-  // Assuming you have a data-testid attribute on the Button component
-const button = screen.getByTestId("basic-button");
+    // Assuming you have a data-testid attribute on the Button component
+    const button = screen.getByTestId("basic-button");
 
-// Trigger a click on the button
-fireEvent.click(button);
+    // Trigger a click on the button
+    fireEvent.click(button);
 
-// Wait for the menu to open
-await screen.findByText("Logout");
+    // Wait for the menu to open
+    await screen.findByText("Logout");
 
-// Check if the menu is open
-expect(screen.getByText("Logout")).toBeInTheDocument();
-
+    // Check if the menu is open
+    expect(screen.getByText("Logout")).toBeInTheDocument();
   });
 
   // Add more test cases for other functions in the Header component

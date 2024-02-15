@@ -24,11 +24,6 @@ import {
 } from "./api";
 // import ReportType2 from './ReportType2';
 const FillerDashboard = () => {
-  // var data = [{
-  //     "common": 34,
-  //     "uncommon": 54
-  // }];
-
   const [modelDataList, setModelDataList] = useState();
   const [userSelectedModel, setUserSelectedModel] = useState();
 
@@ -178,63 +173,6 @@ const FillerDashboard = () => {
     };
   };
 
-  const milestonesData = {
-    "Sketch Final": {
-      Deadline: "15/01/2025",
-      subTask: {
-        "Development DR": {
-          necessary: 34,
-          unnecessary: 22,
-        },
-        "Appearance proto DR": {
-          necessary: 36,
-          unnecessary: 42,
-        },
-        "Structure Briefing DR": {
-          necessary: 44,
-          unnecessary: 62,
-        },
-        "Kickoff / Strategy DR": {
-          necessary: 24,
-          unnecessary: 22,
-        },
-        "Condensation DR-1": {
-          necessary: 14,
-          unnecessary: 62,
-        },
-      },
-    },
-    "Rough CAD": {
-      Deadline: "30/01/2025",
-      subTask: {
-        "ControlConcept DR": {
-          necessary: 32,
-          unnecessary: 42,
-        },
-        "ISO 26262 verification review": {
-          necessary: 54,
-          unnecessary: 22,
-        },
-        "Aerodynamics DR-1": {
-          necessary: 2,
-          unnecessary: 3,
-        },
-        "Merchantability DR": {
-          necessary: 34,
-          unnecessary: 22,
-        },
-      },
-    },
-    SOP: {
-      Deadline: "30/01/2024",
-      subTask: {
-        "Review DR": {
-          necessary: 34,
-          unnecessary: 22,
-        },
-      },
-    },
-  };
   return (
     <div
       className=" flex flex-col items-stretch h-full"
@@ -272,10 +210,7 @@ const FillerDashboard = () => {
               <Tab label="Report type 2" style={getTabStyle(1)} />
               <Tab label="Report type 3" style={getTabStyle(2)} />
             </Tabs>
-            <div role="tabpanel" hidden={value !== 1}>
-              {/* Use the ReportType2 component for the Report type 2 tab with provided data */}
-              {/* <ReportType2 milestones={milestonesData} /> */}
-            </div>
+            <div role="tabpanel" hidden={value !== 1}></div>
 
             <div role="tabpanel" hidden={value !== 0}>
               {/* Your existing code goes here */}
@@ -291,7 +226,7 @@ const FillerDashboard = () => {
                       style={{ minWidth: "30%", borderRadius: "4px" }}
                     >
                       <InputLabel id="demo-simple-select-label">
-                        Select Model
+                        Select Models
                       </InputLabel>
                       <Select
                         labelId="demo-simple-select-label"
@@ -317,7 +252,7 @@ const FillerDashboard = () => {
                       <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
-                        label="Select Model"
+                        label="Select System"
                         onChange={(e) => {
                           handleSystemChange(e);
                         }}
@@ -340,7 +275,7 @@ const FillerDashboard = () => {
                       <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
-                        label="Select Model"
+                        label="Select System"
                         onChange={(e) => handleBlockChange(e)}
                       >
                         <MenuItem value="">Select</MenuItem>

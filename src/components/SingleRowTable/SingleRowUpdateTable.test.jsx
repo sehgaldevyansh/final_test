@@ -3,6 +3,8 @@ import SingleRowUpdateTable from "./SingleRowUpdateTable";
 import { Provider } from "react-redux";
 import { store } from "../../store";
 import { MemoryRouter } from "react-router-dom";
+import { vi } from "vitest";
+import { act } from "react-dom/test-utils";
 
 describe("SingleRowUpdateTable Component", () => {
   const headings = [
@@ -27,6 +29,41 @@ describe("SingleRowUpdateTable Component", () => {
     sumQty: "2",
     aar: "A",
   };
+
+  const consoleLogSpy = vi.spyOn(console, "log");
+
+  afterEach(() => {
+    // Clear the mock between tests
+    consoleLogSpy.mockClear();
+  });
+
+  test("renders with provided data details and logs key-value pairs", () => {
+    // Render the component
+    render(
+      <SingleRowUpdateTable
+        headings={headings}
+        data={[]}
+        type="tpl"
+        dataDetails={dataDetails}
+      />
+    );
+
+    // Check if each heading and value is rendered on the screen
+    headings.forEach((heading) => {
+      expect(screen.getByText(heading)).toBeInTheDocument();
+    });
+
+    Object.entries(dataDetails).forEach(([key, value]) => {
+      if (value === "") {
+        expect(screen.getByDisplayValue("")).toBeInTheDocument();
+      } else {
+        expect(screen.getByText(value)).toBeInTheDocument();
+      }
+    });
+
+    // Check if console.log has been called only once
+    expect(consoleLogSpy).toHaveBeenCalledTimes(10);
+  });
 
   test("renders with provided data details", () => {
     const { getByText, getByDisplayValue } = render(
@@ -54,8 +91,4 @@ describe("SingleRowUpdateTable Component", () => {
       }
     });
   });
-
- 
-
-
 });
