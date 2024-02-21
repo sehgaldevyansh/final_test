@@ -35,6 +35,19 @@ describe("ViewModal Component", () => {
     // Add more assertions as needed
   });
 
+  it("fetches the user info", async () => {
+    const response = await fetch(
+      "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/createtemplate"
+    );
+
+    expect(response.status).toBe(200);
+    expect(response.statusText).toBe("OK");
+    expect(await response.json()).toEqual({
+      firstName: "John",
+      lastName: "Maverick",
+    });
+  });
+
   it("navigates to /creator/modellist when Cancel button is clicked", async () => {
     // Mock the navigate function from react-router-dom
 

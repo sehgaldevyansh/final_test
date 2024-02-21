@@ -1,10 +1,10 @@
 import React from "react";
 import { useReducer } from "react";
-import ShiftButton from '../../assets/LoginPage/button_shift.svg'
+import ShiftButton from "../../assets/LoginPage/button_shift.svg";
 import { useNavigate } from "react-router-dom";
-import './ButtonLogin.css'
+import "./ButtonLogin.css";
 export const ButtonLogin = ({ property1, className }) => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [state, dispatch] = useReducer(reducer, {
     property1: property1 || "default",
     isHovered: false,
@@ -13,7 +13,6 @@ export const ButtonLogin = ({ property1, className }) => {
     navigate("/creator/modellist");
   };
 
- 
   return (
     <button
       className={`login-btn border border-solid flex items-center gap-[12px] px-[26px] py-[12px] rounded-[6px] relative all-[unset] box-border ${
@@ -37,12 +36,7 @@ export const ButtonLogin = ({ property1, className }) => {
       }}
       onClick={handleLogin}
     >
-      <div
-        className= "[ font-family:'Inter',Helvetica] w-fit mt-[-1.00px] tracking-[0] text-[22px] font-medium text-center leading-[normal] relative "
-        
-      
-
-      >
+      <div className="[ font-family:'Inter',Helvetica] w-fit mt-[-1.00px] tracking-[0] text-[22px] font-medium text-center leading-[normal] relative ">
         LOGIN
       </div>
       {state.isHovered && (

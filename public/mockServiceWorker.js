@@ -1,3 +1,5 @@
+/* v8 ignore start */
+
 /* eslint-disable */
 /* tslint:disable */
 
@@ -119,7 +121,7 @@ async function handleRequest(event, requestId) {
   // Ensure MSW is active and ready to handle the message, otherwise
   // this message will pend indefinitely.
   if (client && activeClientIds.has(client.id)) {
-    ;(async function () {
+    ; (async function () {
       const responseClone = response.clone()
 
       sendToClient(
@@ -285,3 +287,5 @@ async function respondWithMock(response) {
 
   return mockedResponse
 }
+
+/* v8 ignore stop */

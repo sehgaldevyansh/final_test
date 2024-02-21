@@ -258,8 +258,9 @@ const FillerModellist = () => {
                 className="text-neutral-500 text-sm font-semibold leading-4 tracking-tight flex items-center gap-2"
                 style={{ width: "80%" }}
               >
-                Search:
+                <label htmlFor="searchInput">Search:</label>
                 <select
+                  id="searchInput"
                   className="text-zinc-400 text-sm leading-4 tracking-tight outline-none border-none focus:ring-0 focus:border-none"
                   value={selectedSearchOption}
                   onChange={(e) => {
@@ -275,6 +276,7 @@ const FillerModellist = () => {
                 </select>
                 <input
                   type="text"
+                  id="searchInput"
                   className="text-zinc-400 text-sm  leading-4 pr-80 tracking-tight outline-none border-none focus:ring-0 focus:border-none"
                   placeholder={`Enter Here`}
                   value={searchTerm}

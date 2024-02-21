@@ -47,4 +47,98 @@ describe("FillerModelList component", () => {
       // Add more assertions based on your component's behavior
     });
   });
+
+  it("fetches the user info", async () => {
+    render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <FillerModellist />
+        </MemoryRouter>
+      </Provider>
+    );
+    const response = await fetch(
+      "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/dcms/filler/all-model"
+    );
+
+    expect(response.status).toBe(200);
+    expect(response.statusText).toBe("OK");
+
+    await screen.findByText("Model1");
+
+    // Check if the data is rendered correctly
+    expect(screen.getByText("Model Name")).toBeInTheDocument();
+  });
+
+  test("handles search functionality for Name", async () => {
+    render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <FillerModellist />
+        </MemoryRouter>
+      </Provider>
+    );
+
+    const searchInput = screen.getByPlaceholderText("Enter Here");
+
+    userEvent.type(searchInput, "Model1");
+
+    await waitFor(() => {
+      expect(console.log).toHaveBeenCalledWith("Search Term:", "Model1");
+      expect(console.log).toHaveBeenCalledWith("Selected Option:", "Name");
+      // Add more assertions based on your component's behaviora
+      expect(screen.getByText("Model1")).toBeInTheDocument();
+    });
+  });
+
+  test("handles search functionality for Edited By", async () => {
+    render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <FillerModellist />
+        </MemoryRouter>
+      </Provider>
+    );
+
+    // Select "Edited By" from the dropdown
+    const searchDropdown = screen.getByLabelText("Search:");
+    fireEvent.change(searchDropdown, { target: { value: "Edited By" } });
+
+    // Type user input
+    const searchInput = screen.getByPlaceholderText("Enter Here");
+    userEvent.type(searchInput, "User1");
+
+    // Wait for the component to re-render after the search
+    await waitFor(() => {
+      expect(console.log).toHaveBeenCalledWith("Search Term:", "User1");
+      expect(console.log).toHaveBeenCalledWith("Selected Option:", "Edited By");
+      // Add more assertions based on your component's behavior
+      expect(screen.getByText("User1")).toBeInTheDocument();
+    });
+  });
+
+  test("handles search functionality for Level", async () => {
+    render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <FillerModellist />
+        </MemoryRouter>
+      </Provider>
+    );
+
+    // Select "Level" from the dropdown
+    const searchDropdown = screen.getByLabelText("Search:");
+    fireEvent.change(searchDropdown, { target: { value: "Level" } });
+
+    // Type user input
+    const searchInput = screen.getByPlaceholderText("Enter Here");
+    userEvent.type(searchInput, "Type1");
+
+    // Wait for the component to re-render after the search
+    await waitFor(() => {
+      expect(console.log).toHaveBeenCalledWith("Search Term:", "Type1");
+      expect(console.log).toHaveBeenCalledWith("Selected Option:", "Level");
+      // Add more assertions based on your component's behavior
+      expect(screen.getByText("Type1")).toBeInTheDocument();
+    });
+  });
 });

@@ -1,13 +1,16 @@
-import { useFetchModelListsQuery, useAddModelListsMutation } from "../../../store";
+import {
+  useFetchModelListsQuery,
+  useAddModelListsMutation,
+} from "../../../store";
 import { useMemo, useState, useEffect } from "react";
 import DataTable from "react-data-table-component";
 import Header from "../../../components/Header/Header";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Switch from "react-switch";
-import './ModelList.css'
+import "./ModelList.css";
 import ActivationModal from "../../../components/Modals/toggleModal";
-import pencilIcon from '../../../assets/Flaticons/fi-sr-pencil.svg';
-import searchIcon from '../../../assets/Flaticons/searchIcon.svg';
+import pencilIcon from "../../../assets/Flaticons/fi-sr-pencil.svg";
+import searchIcon from "../../../assets/Flaticons/searchIcon.svg";
 import { useNavigate } from "react-router-dom";
 import NavigationPathComponent from "../../../components/NavigationPathComponent/NavigationPathComponent";
 import { Button } from "@mui/material";
@@ -19,7 +22,6 @@ function App() {
   // const res=useFetchModelListsQuery("");
   // console.log(res);
   // console.log("Actual Data", data);
-
 
   // const [removeModel,results]=useDeleteModelListMutation();
   // removeModel("model_name"); // Delete function
@@ -41,18 +43,18 @@ function App() {
         // const jsonData = await response.json();
         // console.log('Fetched JSON data:', jsonData);
 
-        const toggleStates = data?.results?.map((model) => model.Active == true);
+        const toggleStates = data?.results?.map(
+          (model) => model.Active == true
+        );
         console.log("toggleStates", toggleStates);
         setToggleStates(toggleStates);
         setModelData(data?.results);
         setFilteredData(data?.results);
-
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
     fetchData();
-
   }, [isLoading]);
   const handleCreateClick = () => {
     console.log("Create button clicked!");
@@ -62,20 +64,23 @@ function App() {
   //   alert("Ask Query button clicked!");
   // };
   const handleSearch = (term, option) => {
-
     console.log("Search Term:", term);
     console.log("Selected Option:", option);
-    term = term.toString()
+    term = term.toString();
     const searchTermLowerCase = term.toLowerCase();
 
     const filteredData = modelData.filter((model) => {
-      option = option === 'Level' ? 'Type' : option
+      option = option === "Level" ? "Type" : option;
       const propertyValue = model[option].toString();
       console.log("Property Value:", propertyValue);
 
-      const searchPropertyValue = propertyValue === 'Completed' ? 'published' : propertyValue
+      const searchPropertyValue =
+        propertyValue === "Completed" ? "published" : propertyValue;
       console.log("Property Value2:", searchPropertyValue);
-      return searchPropertyValue && searchPropertyValue.toLowerCase().includes(searchTermLowerCase);
+      return (
+        searchPropertyValue &&
+        searchPropertyValue.toLowerCase().includes(searchTermLowerCase)
+      );
     });
 
     console.log("Filtered Data:", filteredData);
@@ -84,16 +89,13 @@ function App() {
     setToggleStates(modelData.map((model) => model.Active === "true"));
   };
 
-
-
-
   const handleDownloadPDF = (status) => {
     if (status === "Completed") {
-      const dummyPDFContent = '<pdf>...</pdf>';
-      const blob = new Blob([dummyPDFContent], { type: 'application/pdf' });
-      const link = document.createElement('a');
+      const dummyPDFContent = "<pdf>...</pdf>";
+      const blob = new Blob([dummyPDFContent], { type: "application/pdf" });
+      const link = document.createElement("a");
       link.href = window.URL.createObjectURL(blob);
-      link.download = 'dummy-file.pdf';
+      link.download = "dummy-file.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -102,8 +104,6 @@ function App() {
     }
   };
   const [pendingActivation, setPendingActivation] = useState(null);
-
-
 
   const handleSwitchChange = (row, currentState) => {
     console.log("row", row);
@@ -136,11 +136,7 @@ function App() {
     setPendingActivation({ row, currentState });
     setModalMessage(modalMessage);
     setIsModalOpen(true);
-
   };
-
-
-
 
   const handleConfirmActivation = (confirmed) => {
     setIsModalOpen(false);
@@ -150,22 +146,16 @@ function App() {
       const activateValue = currentState ? true : false;
       const updatedData = filteredData.map((item) =>
         item.Name === row.Name ? { ...item, Active: activateValue } : item
-
       );
       addModelList({
-        "modelNumber": row?.Name,
-        "action": activateValue
-      })
+        modelNumber: row?.Name,
+        action: activateValue,
+      });
       setFilteredData(updatedData);
     }
 
     setPendingActivation(null);
-
   };
-
-
-
-
 
   // const handleEdit = (index) => {
   //   alert(`Editing model ${modelData[index]?.Name}`);
@@ -173,21 +163,34 @@ function App() {
   const columns = useMemo(
     () => [
       {
-        name: <div style={{ whiteSpace: 'normal', width: 'min-content', marginRight: '2px', fontSize: '14px' }}>{"Name"}</div>, selector: (row) => row?.Name, sortable: true, cell: (row) => {
-
-          let statusPath = 'view';
+        name: (
+          <div
+            style={{
+              whiteSpace: "normal",
+              width: "min-content",
+              marginRight: "2px",
+              fontSize: "14px",
+            }}
+          >
+            {"Name"}
+          </div>
+        ),
+        selector: (row) => row?.Name,
+        sortable: true,
+        cell: (row) => {
+          let statusPath = "view";
           switch (row.Status) {
             case "Draft":
-              statusPath = 'view'
+              statusPath = "view";
               break;
             case "InProgress":
-              statusPath = 'viewprogress'
+              statusPath = "viewprogress";
               break;
             case "Completed":
-              statusPath = 'viewfull'
+              statusPath = "viewfull";
               break;
             case "Published":
-              statusPath = 'viewfull'
+              statusPath = "viewfull";
               break;
             default:
               break;
@@ -195,16 +198,23 @@ function App() {
           //  return(<Link to={row?.Status == 'Draft' ? `/model/view/${row?.Name}` : `/model/viewfull/${row?.Name}`} className="model-name-link">
           //     <span style={{ color: "#171C8F" }}>{row?.Name}</span>
           //   </Link>)
-          return (<Link to={`/model/${statusPath}/${row?.Name}`} className="model-name-link">
-            <span style={{ color: "#171C8F" }}>{row?.Name}</span>
-          </Link>)
-        }
-        ,
+          return (
+            <Link
+              to={`/model/${statusPath}/${row?.Name}`}
+              className="model-name-link"
+            >
+              <span style={{ color: "#171C8F" }}>{row?.Name}</span>
+            </Link>
+          );
+        },
         grow: 0,
-
-
       },
-      { name: "Edited By", selector: (row) => row["Edited By"], sortable: true, wrap: true },
+      {
+        name: "Edited By",
+        selector: (row) => row["Edited By"],
+        sortable: true,
+        wrap: true,
+      },
       { name: "Edited On", selector: (row) => row["Edited On"] },
       { name: "Level", selector: (row) => row.Type, sortable: true, grow: 0 },
       {
@@ -213,19 +223,18 @@ function App() {
         cell: (row) => (
           <>
             {
-            // (row.Status === "Completed" || row.Status === "Published") ? (
-            //   <div
-            //     className="cursor-pointer w-4 h-4 flex items-center justify-center"
-            //     onClick={() => handleDownloadPDF(row.Status)}
-            //   >
-            //     <img
-            //       loading="lazy"
-            //       src="https://cdn.builder.io/api/v1/image/assets/TEMP/3e447261ae51e05387a06b45793394e7a5bdc63ba2ec236b890de4cc2a01900e?"
-            //       className="aspect-[0.71] object-contain object-center w-full overflow-hidden"
-            //     />
-            //   </div>
-            // ) :
-             (
+              // (row.Status === "Completed" || row.Status === "Published") ? (
+              //   <div
+              //     className="cursor-pointer w-4 h-4 flex items-center justify-center"
+              //     onClick={() => handleDownloadPDF(row.Status)}
+              //   >
+              //     <img
+              //       loading="lazy"
+              //       src="https://cdn.builder.io/api/v1/image/assets/TEMP/3e447261ae51e05387a06b45793394e7a5bdc63ba2ec236b890de4cc2a01900e?"
+              //       className="aspect-[0.71] object-contain object-center w-full overflow-hidden"
+              //     />
+              //   </div>
+              // ) :
               <div className="w-4 h-4 flex items-center justify-center opacity-50">
                 <img
                   loading="lazy"
@@ -233,7 +242,6 @@ function App() {
                   className="aspect-[0.71] object-contain object-center w-full overflow-hidden"
                 />
               </div>
-            )
             }
           </>
         ),
@@ -249,19 +257,23 @@ function App() {
           let statusText = "";
           switch (row.Status) {
             case "Draft":
-              statusStyle = " font-semibold w-17 h-5 bg-gray-200 text-neutral-500";
+              statusStyle =
+                " font-semibold w-17 h-5 bg-gray-200 text-neutral-500";
               statusText = "In Draft";
               break;
             case "InProgress":
-              statusStyle = " font-semibold w-21 h-5 bg-lime-100 text-green-700";
+              statusStyle =
+                " font-semibold w-21 h-5 bg-lime-100 text-green-700";
               statusText = "In Progress";
               break;
             case "Completed":
-              statusStyle = " font-semibold w-19 h-5 bg-rose-200 text-orange-700";
+              statusStyle =
+                " font-semibold w-19 h-5 bg-rose-200 text-orange-700";
               statusText = "Published";
               break;
             case "Published":
-              statusStyle = " font-semibold w-19 h-5 bg-rose-200 text-orange-700";
+              statusStyle =
+                " font-semibold w-19 h-5 bg-rose-200 text-orange-700";
               statusText = "Published";
               break;
             default:
@@ -269,14 +281,14 @@ function App() {
           }
           return (
             <div
-              className={`text-xs leading-3 tracking-tight whitespace-nowrap items-stretch justify-center px-3 py-1 rounded-xl ${statusStyle}`} style={{ fontWeight: '400' }}
+              className={`text-xs leading-3 tracking-tight whitespace-nowrap items-stretch justify-center px-3 py-1 rounded-xl ${statusStyle}`}
+              style={{ fontWeight: "400" }}
             >
               {statusText}
             </div>
           );
         },
         center: true,
-
       },
       // {
       //   name: "Description", selector: (row) => row.Description
@@ -290,7 +302,9 @@ function App() {
           <Switch
             key={row.Active}
             // onChange={(checked) =>{ handleToggleActivate(row, checked)}  }
-            onChange={(e) => { handleSwitchChange(row, e) }}
+            onChange={(e) => {
+              handleSwitchChange(row, e);
+            }}
             checked={row.Active === true}
             // checked={toggleStates[row.index]}
             onColor="#fff"
@@ -308,7 +322,7 @@ function App() {
                   fontSize: 10,
                   color: "#f00",
                   marginRight: -3,
-                  marginTop: -2
+                  marginTop: -2,
                 }}
               >
                 off
@@ -324,7 +338,7 @@ function App() {
                   fontSize: 10,
                   color: "#171c8f",
                   marginLeft: -3,
-                  marginTop: -2
+                  marginTop: -2,
                 }}
               >
                 on
@@ -346,14 +360,23 @@ function App() {
           <div className="flex items-center gap-2">
             <div
               className={`cursor-pointer flex flex-col items-start`}
-            // onClick={() => handleEdit(row.index)}
+              // onClick={() => handleEdit(row.index)}
             >
               {/* <Router>  */}
-              {(row.Status !== 'Completed' && row.Status !== 'Published') ? (<Link to={row?.Status === 'InProgress' ? { pathname: `/upload/${row?.Name}` } : { pathname: `/model/edit/${row?.Name}` }} className="model-name-link">
-                <i className="fi fi-rr-user">
-                  <img src={pencilIcon} alt="Pencil Icon" />
-                </i>
-              </Link>) : null}
+              {row.Status !== "Completed" && row.Status !== "Published" ? (
+                <Link
+                  to={
+                    row?.Status === "InProgress"
+                      ? { pathname: `/upload/${row?.Name}` }
+                      : { pathname: `/model/edit/${row?.Name}` }
+                  }
+                  className="model-name-link"
+                >
+                  <i className="fi fi-rr-user">
+                    <img src={pencilIcon} alt="Pencil Icon" />
+                  </i>
+                </Link>
+              ) : null}
               {/* </Router> */}
             </div>
           </div>
@@ -361,29 +384,38 @@ function App() {
         center: true,
         grow: 0,
       },
-
     ],
     [filteredData]
   );
   return (
-    <div className=" flex flex-col items-stretch h-full creator-modellist-main-container" style={{
-      backgroundColor: '#f4f5f8',
-      backgroundSize: 'cover',
-      height: '100vh'
-    }}>
+    <div
+      className=" flex flex-col items-stretch h-full creator-modellist-main-container"
+      style={{
+        backgroundColor: "#f4f5f8",
+        backgroundSize: "cover",
+        height: "100vh",
+      }}
+    >
       {/* Header */}
-      <Header className='header-model-list' isHome={true} />
+      <Header className="header-model-list" isHome={true} />
       <div className="modal-list-main-container">
-        <NavigationPathComponent paths={[{ name: 'MSIL R&D', path: '/creator/modellist' }]} current='Models' />
+        <NavigationPathComponent
+          paths={[{ name: "MSIL R&D", path: "/creator/modellist" }]}
+          current="Models"
+        />
       </div>
       <div className="flex-col   relative flex  w-full items-center pl-8 pr-8  max-md:max-w-full max-md:pl-5  modellist-container">
-
         <div className="justify-between items-center flex w-full gap-5 mt-4 max-md:max-w-full max-md:flex-wrap">
           <div className="text-neutral-700 text-2xl font-semibold tracking-tight grow whitespace-nowrap my-auto">
             Model Catalogue
           </div>
           <div className="flex  ">
-            <Button className='dcms-btn-main dcms-active-btn' onClick={handleCreateClick}>Create</Button>
+            <Button
+              className="dcms-btn-main dcms-active-btn"
+              onClick={handleCreateClick}
+            >
+              Create
+            </Button>
           </div>
         </div>
         <div className="rounded shadow bg-white flex w-full flex-col justify-center mt-4 pl-4 pr-16 py-4 items-start max-md:max-w-full max-md:pr-5">
@@ -392,9 +424,11 @@ function App() {
               <i className="aspect-square object-contain object-center w-4 fill-zinc-400 overflow-hidden shrink-0 max-w-full">
                 <img src={searchIcon} alt="Pencil Icon" />
               </i>
-              <div className="text-neutral-500 text-sm font-semibold leading-4 tracking-tight flex items-center gap-2" style={{ width: '80%' }}>
+              <div
+                className="text-neutral-500 text-sm font-semibold leading-4 tracking-tight flex items-center gap-2"
+                style={{ width: "80%" }}
+              >
                 Search:
-
                 <select
                   className="text-zinc-400 text-sm leading-4 tracking-tight outline-none border-none focus:ring-0 focus:border-none"
                   value={selectedSearchOption}
@@ -429,34 +463,34 @@ function App() {
             </div> */}
           </div>
         </div>
-
         <div className="items-stretch rounded shadow bg-white flex w-full flex-col justify-center mt-6 px-4 py-5 max-md:max-w-full">
           <div className="items-stretch rounded border border-[color:var(--grey-20,#E6E9F0)] bg-white flex flex-col pt-0.5 pb-2 px-3 border-solid max-md:max-w-full">
-            <div className=" items-stretch flex gap-0 max-md:max-w-full max-md:flex-wrap max-md:justify-center" style={{ height: '60vh' }} >
+            <div
+              className=" items-stretch flex gap-0 max-md:max-w-full max-md:flex-wrap max-md:justify-center"
+              style={{ height: "60vh" }}
+            >
               <DataTable
                 columns={columns}
                 data={filteredData}
                 fixedHeader={true}
                 // keyField="Edited By"
                 customStyles={{
-                  overflowY: 'scroll',
+                  overflowY: "scroll",
                   headRow: {
                     style: {
                       color: "#171C8F",
                       fontWeight: 600,
-                      fontSize: '14px',
-
+                      fontSize: "14px",
                     },
                   },
                   headCells: {
                     style: {
-                      whiteSpace: 'normal',
+                      whiteSpace: "normal",
                     },
                   },
-                  height: '60vh'
+                  height: "60vh",
                 }}
                 responsive={true}
-
               />
             </div>
           </div>
@@ -468,7 +502,9 @@ function App() {
             handleClose={() => setIsModalOpen(false)}
             pendingActivation={pendingActivation}
           />
-        </div> </div></div>
+        </div>{" "}
+      </div>
+    </div>
   );
 }
 export default App;
