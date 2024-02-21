@@ -77,9 +77,12 @@ describe("FillerModelList component", () => {
         </MemoryRouter>
       </Provider>
     );
+    // Select "Name" from the dropdown
+    const searchDropdown = screen.getByLabelText("Search:");
+    fireEvent.change(searchDropdown, { target: { value: "Name" } });
 
+    // Type user input
     const searchInput = screen.getByPlaceholderText("Enter Here");
-
     userEvent.type(searchInput, "Model1");
 
     await waitFor(() => {

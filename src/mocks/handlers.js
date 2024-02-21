@@ -15,6 +15,8 @@ export const handlers = [
             lastName: 'Maverick',
         })
     }),
+
+    //fillermodelist mocked api
     http.get('https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/dcms/filler/all-model', () => {
         return HttpResponse.json({
             data: [
@@ -29,23 +31,83 @@ export const handlers = [
                     chart: 'Chart1',
                     rowStateFlag: 2,
                 },
+                {
+                    name: 'Model2',
+                    editedBy: 'User2',
+                    editedOn: '2022-01-01',
+                    totalBlocks: 6,
+                    type: 'Type2',
+                    sentToFillBy: 'PMG1',
+                    sentOn: '2022-01-02',
+                    chart: 'Chart1',
+                    rowStateFlag: 2,
+                },
 
                 // Add more mock data as needed
             ],
         })
     }),
 
-    http.get('*/all-blocks', () => {
+    //fillermain mocked apis
+
+    http.get('https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-utility-app/upload-utility/model/:id', (req, res) => {
+        const { id } = req.params;
+        const mockData = {
+            modelId: id,
+            // Add more relevant data properties as needed
+        };
+        return HttpResponse.json(mockData);
+    }),
+
+    http.get('https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-utility-app/upload-utility/generate-TPL/:id', (req, res) => {
+        const { id } = req.params;
+        // Assuming a successful response for template generation
         return HttpResponse.json({
-            block: 'any',
+            message: `Template for model ${id} generated successfully.`,
+        });
+    }),
+
+    //filleractivityfilling mocked api step 1 for fillermain
+
+    http.get('*/summary', (req, res) => {
+        const { modelId } = req.params;
+        // Return mock data for useFetchBaseModelByModelIdQuery
+        return HttpResponse.json({
+            data: {
+                modelName: 'Mock Model',
+                baseModel: 'Mock Base Model',
+                totalBlocks: 10,
+                // Add other properties as needed
+            },
         })
     }),
 
-    http.get('*/summary', () => {
+
+
+
+    http.get('*/all-blocks', () => {
         return HttpResponse.json({
-            content: 'any',
+            data: [
+                {
+                    blockCode: 'Block1',
+                    baseModel: 'Mock Base Model1',
+                    variant: [{ variantName: '001', commInd: 0 }],
+                    checkStatus: false,
+                    // Add other properties as needed
+                },
+                {
+                    blockCode: 'Block2',
+                    baseModel: 'Mock Base Model2',
+                    variant: [{ variantName: '002', commInd: 0 }],
+                    checkStatus: true,
+                    // Add other properties as needed
+                },
+                // Add more blocks as needed
+            ],
         })
     }),
+
+
 
     //login test
     http.get('https://www.cf.marutisuzukisubscribe.com/api/partner/v1/sdk-details?apiKey=3ltd5pa3k574vbblodke8ofd5c', () => {
