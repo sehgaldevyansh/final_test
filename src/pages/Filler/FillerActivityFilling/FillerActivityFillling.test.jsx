@@ -13,7 +13,22 @@ vi.mock("react-router-dom", () => ({
 vi.mock("../../../store", () => ({
   ...vi.importActual("../../../store"),
   useFetchBlockListsQuery: vi.fn(() => ({
-    data: { data: [] },
+    data: {
+      data: [
+        {
+          blockCode: "Block1",
+          baseModel: "Mock Base Model1",
+          variant: [{ variantName: "001", commInd: 0 }],
+          checkStatus: false,
+        },
+        {
+          blockCode: "Block2",
+          baseModel: "Mock Base Model2",
+          variant: [{ variantName: "002", commInd: 0 }],
+          checkStatus: true,
+        },
+      ],
+    },
     error: null,
     isLoading: false,
     refetch: vi.fn(),
@@ -51,30 +66,84 @@ describe("FillerActivityFilling", () => {
     // Restore the spy after the test to avoid interference with other tests
     consoleLogSpy.mockRestore();
   });
+  it("displays correct model details", async () => {
+    render(<FillerActivityFilling />);
+    // Replace the text with the actual model details based on the mock data
+    expect(screen.getByText("Mock Model")).toBeInTheDocument();
+    expect(screen.getByText("Mock BaseModel")).toBeInTheDocument();
+  });
 
-  //   it("handles switch change correctly", async () => {
-  //     render(<FillerActivityFilling />);
-  //     const switchElement = screen.getByTestId("your-switch-testid");
+  it("displays the correct total blocks count", async () => {
+    render(<FillerActivityFilling />);
 
-  //     fireEvent.click(switchElement);
+    // Assuming that the "Total Blocks" text is present in the rendered component
+    const totalBlocksText = screen.getByText(/Total Blocks/i);
 
-  //     // Ensure that the handleSwitchChange function is called
-  //     await waitFor(() => {
-  //       expect(screen.getByText("Status Updated")).toBeInTheDocument();
-  //     });
-  //   });
+    // Wait for the component to update (if there are asynchronous operations)
+    await vi.waitFor(() => {
+      // Get the sibling span element with fontWeight: "400"
+      const totalBlocksValue = totalBlocksText.nextElementSibling;
 
-  //   it("handles save as draft correctly", async () => {
-  //     render(<FillerActivityFilling />);
-  //     const saveAsDraftButton = screen.getByText("Save as Draft");
+      // Assert that the totalBlocksValue contains the correct value
+      expect(totalBlocksValue).toHaveTextContent("2");
+    });
+  });
 
-  //     fireEvent.click(saveAsDraftButton);
+  it("handles search functionality for baseModel", async () => {
+    const logSpy = vi.spyOn(console, "log");
 
-  //     // Ensure that the handleSaveAsDraft function is called
-  //     await waitFor(() => {
-  //       expect(screen.getByText("Draft Saved")).toBeInTheDocument();
-  //     });
-  //   });
+    render(<FillerActivityFilling />);
 
-  // Add more test cases as needed for other functionalities and UI elements
+    // Select "Base Model" from the dropdown
+    const searchDropdown = screen.getByLabelText("Search:");
+    fireEvent.change(searchDropdown, { target: { value: "baseModel" } });
+
+    // Type user input
+    const searchInput = screen.getByPlaceholderText("Enter value to search");
+    fireEvent.change(searchInput, { target: { value: "Mock Base Model2" } });
+
+    // Wait for the component to re-render after the search
+    await waitFor(() => {
+      expect(logSpy).toHaveBeenCalledWith("Search Term:", "Mock Base Model2");
+      expect(logSpy).toHaveBeenCalledWith("Selected Option:", "baseModel");
+
+      // Add more assertions based on your component's behavior
+
+      // Check if the filtered data is updated correctly based on the search term and option
+      // You can use Vitest's `expect` function for assertions on the DOM
+      // For example: expect(screen.getByText("Mock Base Model2")).toBeTruthy();
+      // Make sure to replace this with actual assertions based on your component's behavior
+    });
+
+    logSpy.mockRestore();
+  });
+
+  it("handles search functionality for Blocks", async () => {
+    const logSpy = vi.spyOn(console, "log");
+
+    render(<FillerActivityFilling />);
+
+    // Select "Blocks" from the dropdown
+    const searchDropdown = screen.getByLabelText("Search:");
+    fireEvent.change(searchDropdown, { target: { value: "blockCode" } });
+
+    // Type user input
+    const searchInput = screen.getByPlaceholderText("Enter value to search");
+    fireEvent.change(searchInput, { target: { value: "Block2" } });
+
+    // Wait for the component to re-render after the search
+    await waitFor(() => {
+      expect(logSpy).toHaveBeenCalledWith("Search Term:", "Block2");
+      expect(logSpy).toHaveBeenCalledWith("Selected Option:", "blockCode");
+
+      // Add more assertions based on your component's behavior
+
+      // Check if the filtered data is updated correctly based on the search term and option
+      // You can use Vitest's `expect` function for assertions on the DOM
+      // For example: expect(screen.getByText("Block2")).toBeTruthy();
+      // Make sure to replace this with actual assertions based on your component's behavior
+    });
+
+    logSpy.mockRestore();
+  });
 });

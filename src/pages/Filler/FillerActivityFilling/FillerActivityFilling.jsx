@@ -171,7 +171,7 @@ const FillerActivityFilling = ({ handleNext, handlePrev }) => {
   };
 
   const handleSearch = (term, option) => {
-    console.log("Search Term:", term, typeof term);
+    console.log("Search Term:", term);
     console.log("Selected Option:", option);
     // term = term.toString()
     const searchTermLowerCase = term?.toLowerCase();
@@ -386,6 +386,7 @@ const FillerActivityFilling = ({ handleNext, handlePrev }) => {
           width={68}
           height={20}
           className="react-switch"
+          data-testid="switch-input"
           id="material-switch"
         />
       ),
@@ -459,9 +460,10 @@ const FillerActivityFilling = ({ handleNext, handlePrev }) => {
                 className="text-neutral-500 text-sm leading-4 tracking-tight flex items-center gap-2"
                 style={{ width: "80%" }}
               >
-                <span style={{ fontWeight: "600" }}>Search:</span>
+                <label htmlFor="searchInput">Search:</label>
 
                 <select
+                  id="searchInput"
                   className="flex items-center text-zinc-400 text-sm  tracking-tight outline-none border-none focus:ring-0 focus:border-none"
                   value={selectedSearchOption}
                   onChange={(e) => {
@@ -485,6 +487,7 @@ const FillerActivityFilling = ({ handleNext, handlePrev }) => {
                 </select>
                 <input
                   type="text"
+                  id="searchInput"
                   className="text-zinc-400 text-sm  leading-4 pr-80 tracking-tight outline-none border-none focus:ring-0 focus:border-none"
                   placeholder={`Enter value to search`}
                   value={searchTerm}
