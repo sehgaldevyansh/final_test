@@ -21,7 +21,7 @@ function App() {
   const { data, error, isLoading } = useFetchModelListsQuery();
   // const res=useFetchModelListsQuery("");
   // console.log(res);
-  // console.log("Actual Data", data);
+  console.log("Actual Data", data);
 
   // const [removeModel,results]=useDeleteModelListMutation();
   // removeModel("model_name"); // Delete function
@@ -50,6 +50,7 @@ function App() {
         setToggleStates(toggleStates);
         setModelData(data?.results);
         setFilteredData(data?.results);
+        console.log(filteredData + "devvyansh's print to check mock");
       } catch (error) {
         console.error("Error fetching data:", error);
       }

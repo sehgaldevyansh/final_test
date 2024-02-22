@@ -146,4 +146,21 @@ describe("FillerActivityFilling", () => {
 
     logSpy.mockRestore();
   });
+
+  it("disables the 'Next' button initially when the first block has checkStatus: false", async () => {
+    render(<FillerActivityFilling />);
+
+    // Assuming that the "Next" button is present in the rendered component
+    const nextButton = screen.getByText("Next");
+
+    // Wait for the component to update (if there are asynchronous operations)
+    await vi.waitFor(() => {
+      // Assert that the 'Next' button is disabled
+      expect(nextButton).toBeDisabled();
+    });
+  });
+
+  // ...
+
+  // ...
 });

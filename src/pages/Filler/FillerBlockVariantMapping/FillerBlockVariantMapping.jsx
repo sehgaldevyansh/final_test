@@ -1486,27 +1486,6 @@ const FillerBlockVariantMapping = ({ handleNext }) => {
                 }}
               >
                 <div className="flex items-center justify-between gap-8">
-                  {/* <div className="flex items-center justify-start gap-4">
-                                        <p style={{ fontSize: '14px' }}>Search Base Model</p>
-                                        <div className="flex justify-start" style={{ fontSize: '14px' }}>
-                                            <Select
-                                                labelId="demo-simple-select-label"
-                                                id="demo-simple-select"
-                                                value={20}
-                                                label="Age"
-                                                size="small"
-                                                sx={
-                                                    {
-                                                        fontSize: '14px'
-                                                    }
-                                                }
-                                            >
-                                                <MenuItem style={{ fontSize: '14px' }} value={10}>Ten</MenuItem>
-                                                <MenuItem style={{ fontSize: '14px' }} value={20}>Twenty</MenuItem>
-                                                <MenuItem style={{ fontSize: '14px' }} value={30}>Thirty</MenuItem>
-                                            </Select>
-                                        </div>
-                                    </div> */}
                   <div className="flex items-center gap-4">
                     <p style={{ fontSize: "14px" }}>
                       {handlingNewVarientToggleSelect
