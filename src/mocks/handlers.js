@@ -9,15 +9,19 @@ export const handlers = [
     // to capture all outgoing "GET /posts" requests
     // and execute the given response resolver when they
     // happen.
-    http.get(
-        "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/createtemplate",
-        () => {
-            return HttpResponse.json({
-                firstName: "John",
-                lastName: "Maverick",
-            });
-        }
-    ),
+
+    //need modk respsonse for this api, component gets broken, CORS issue for these 2 apis 
+    // http.get(
+    //     "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/createtemplate", //createmodel
+    // https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/editmodel //viewmodal
+    //     () => {
+    //         return HttpResponse.json({
+
+    //             name: "creator",
+
+    //         });
+    //     }
+    // ),
 
     //fillermodelist mocked api
     http.get(
@@ -93,6 +97,20 @@ export const handlers = [
         }
         )
     }),
+
+    http.get("https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/dcms/filler/block/Block1/all-variants", () => {
+
+        return HttpResponse.json({
+            data: [
+                { variantName: 'Variant1', },
+                { variantName: 'Variant2', },
+                // Add more variants as needed
+            ],
+        }
+        )
+    }),
+
+
 
     //filleractivityfilling mocked api step 1 for fillermain
 

@@ -272,7 +272,7 @@ const ViewModal = () => {
   };
 
   useEffect(() => {
-    // console.log("checking first",data);
+    console.log("checking first", data);
     setFetchedData(data);
     // const newData = JSON?.parse(JSON?.stringify(data));
   }, [isLoading]);
