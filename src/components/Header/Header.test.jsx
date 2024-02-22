@@ -6,6 +6,23 @@ import { Provider } from "react-redux";
 import { store } from "../../store";
 
 describe("Header component", () => {
+  it("displays user information from mock API response", async () => {
+    render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <Header />
+        </MemoryRouter>
+      </Provider>
+    );
+
+    await waitFor(() => {
+      // Check if the user information is displayed in the component
+      const userName = screen.getByText("Test user");
+
+      expect(userName).toBeInTheDocument();
+    });
+  });
+
   it("changes tab on click", () => {
     render(
       <Provider store={store}>

@@ -148,59 +148,25 @@ export const handlers = [
         }
     ),
 
-    //header.test
-    http.post(
-        "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/employee/details",
-        (req, res, ctx) => {
-            // You can customize the response data here
-            return res(
-                ctx.status(200),
-                ctx.json({
-                    employeeDetails: {
-                        id: 1,
-                        name: "John Doe",
-                        role: "Developer",
-                    },
-                })
-            );
-        }
-    ),
 
-    http.post(
-        "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/employee/details",
-        (req, res, ctx) => {
-            // Extract the email from the request body
-            const { email } = req.body;
-            console.log(email + "email in msw post");
-            return HttpResponse.json({
-                results: {
-                    name: "NIkhil Prakash",
-                    email: "kpmg_prakash.nikhil@maruti.co.in",
-                    division: "ERD-BD",
-                    department: "ERD-BD",
-                    vertical: "Engg",
-                    filler: true,
-                    checker1: true,
-                    checker2: true,
-                    checker3: true,
-                    approver: true,
-                    divisionalPMG: true,
-                    verticalPMG: true,
-                    token:
-                        "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcG1nX25lZWxhbnNodS5wYXJuYW1pQG1hcnV0aS5jby5pbiIsInVuaXF1ZV9pZCI6ImU1MzQyZTJiLWY5MWItNDFjMC04YjUzLWIwZWU2MTUwZDdjNyIsImV4cCI6MTcwODUxODc1MywiaWF0IjoxNzA4NTE4MTUzLCJlbWFpbCI6ImtwbWdfbmVlbGFuc2h1LnBhcm5hbWlAbWFydXRpLmNvLmluIn0.I0j787kdNQw-XPVep1_e9JEVn9fWARxqAWeKJKU-aFfJop_ob8gv8jE4izF2uJs7ITqfJaaZ3ri2SR6k7QEJaA",
-                },
-            });
-        }
-    ),
+
 
     //viewtimeline
 
     http.post(
-        "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/create",
-        (req, res, ctx) => {
-            // Mock the response for the POST request
-            return res(ctx.status(200), ctx.json({ data: "mocked data" }));
+        "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/create", () => {
+            return HttpResponse.json({
+                data:
+                {
+                    key: "value",
+
+                },
+
+
+
+            });
         }
+
     ),
 
     //fillercomment
@@ -254,7 +220,22 @@ export const handlers = [
                 // Add more blocks as needed
             ],
         });
-    })
+    }),
+
+
+    //header.test
+    http.post(
+        "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/employee/details", () => {
+            return HttpResponse.json({
+                results:
+                {
+                    name: "Test user",
+                    vertical: "ENGG",
+                    department: "AGL",
+                    division: "XYZ"
+                }
+            });
+        }),
 ];
 
 

@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>264/264</span>
+                <span class='fraction'>245/245</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>264/264</span>
+                <span class='fraction'>245/245</span>
             </div>
         
             
@@ -308,45 +308,7 @@
 <a name='L243'></a><a href='#L243'>243</a>
 <a name='L244'></a><a href='#L244'>244</a>
 <a name='L245'></a><a href='#L245'>245</a>
-<a name='L246'></a><a href='#L246'>246</a>
-<a name='L247'></a><a href='#L247'>247</a>
-<a name='L248'></a><a href='#L248'>248</a>
-<a name='L249'></a><a href='#L249'>249</a>
-<a name='L250'></a><a href='#L250'>250</a>
-<a name='L251'></a><a href='#L251'>251</a>
-<a name='L252'></a><a href='#L252'>252</a>
-<a name='L253'></a><a href='#L253'>253</a>
-<a name='L254'></a><a href='#L254'>254</a>
-<a name='L255'></a><a href='#L255'>255</a>
-<a name='L256'></a><a href='#L256'>256</a>
-<a name='L257'></a><a href='#L257'>257</a>
-<a name='L258'></a><a href='#L258'>258</a>
-<a name='L259'></a><a href='#L259'>259</a>
-<a name='L260'></a><a href='#L260'>260</a>
-<a name='L261'></a><a href='#L261'>261</a>
-<a name='L262'></a><a href='#L262'>262</a>
-<a name='L263'></a><a href='#L263'>263</a>
-<a name='L264'></a><a href='#L264'>264</a>
-<a name='L265'></a><a href='#L265'>265</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L246'></a><a href='#L246'>246</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -741,59 +703,25 @@ export const handlers = [
         }
     ),
 &nbsp;
-    //header.test
-    http.post(
-        "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/employee/details",
-        (req, res, ctx) =&gt; {
-            // You can customize the response data here
-            return res(
-                ctx.status(200),
-                ctx.json({
-                    employeeDetails: {
-                        id: 1,
-                        name: "John Doe",
-                        role: "Developer",
-                    },
-                })
-            );
-        }
-    ),
 &nbsp;
-    http.post(
-        "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/employee/details",
-        (req, res, ctx) =&gt; {
-            // Extract the email from the request body
-            const { email } = req.body;
-            console.log(email + "email in msw post");
-            return HttpResponse.json({
-                results: {
-                    name: "NIkhil Prakash",
-                    email: "kpmg_prakash.nikhil@maruti.co.in",
-                    division: "ERD-BD",
-                    department: "ERD-BD",
-                    vertical: "Engg",
-                    filler: true,
-                    checker1: true,
-                    checker2: true,
-                    checker3: true,
-                    approver: true,
-                    divisionalPMG: true,
-                    verticalPMG: true,
-                    token:
-                        "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcG1nX25lZWxhbnNodS5wYXJuYW1pQG1hcnV0aS5jby5pbiIsInVuaXF1ZV9pZCI6ImU1MzQyZTJiLWY5MWItNDFjMC04YjUzLWIwZWU2MTUwZDdjNyIsImV4cCI6MTcwODUxODc1MywiaWF0IjoxNzA4NTE4MTUzLCJlbWFpbCI6ImtwbWdfbmVlbGFuc2h1LnBhcm5hbWlAbWFydXRpLmNvLmluIn0.I0j787kdNQw-XPVep1_e9JEVn9fWARxqAWeKJKU-aFfJop_ob8gv8jE4izF2uJs7ITqfJaaZ3ri2SR6k7QEJaA",
-                },
-            });
-        }
-    ),
+&nbsp;
 &nbsp;
     //viewtimeline
 &nbsp;
     http.post(
-        "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/create",
-        (req, res, ctx) =&gt; {
-            // Mock the response for the POST request
-            return res(ctx.status(200), ctx.json({ data: "mocked data" }));
+        "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/create", () =&gt; {
+            return HttpResponse.json({
+                data:
+                {
+                    key: "value",
+&nbsp;
+                },
+&nbsp;
+&nbsp;
+&nbsp;
+            });
         }
+&nbsp;
     ),
 &nbsp;
     //fillercomment
@@ -847,7 +775,22 @@ export const handlers = [
                 // Add more blocks as needed
             ],
         });
-    })
+    }),
+&nbsp;
+&nbsp;
+    //header.test
+    http.post(
+        "https://k723fsvii1.execute-api.ap-south-1.amazonaws.com/msil-dcms/dcms/employee/details", () =&gt; {
+            return HttpResponse.json({
+                results:
+                {
+                    name: "Test user",
+                    vertical: "ENGG",
+                    department: "AGL",
+                    division: "XYZ"
+                }
+            });
+        }),
 ];
 &nbsp;
 &nbsp;
@@ -862,7 +805,7 @@ export const handlers = [
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-02-22T13:45:55.118Z
+                at 2024-02-22T18:47:13.923Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
